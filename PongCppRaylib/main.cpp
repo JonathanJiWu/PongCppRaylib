@@ -1,13 +1,12 @@
 #include <raylib.h>
+#include "windowsInterface.h"
+
+WindowsInterface windowsInterface;
 
 
 int main()
 {
-	int screenWidth { 1920 };
-	int screenHeight{ 1080 };
-	InitWindow(screenWidth, screenHeight, "pong");
-
-	SetTargetFPS(60);
+	windowsInterface.SetWindowsInterface();
 
 	while (!WindowShouldClose())
 	{

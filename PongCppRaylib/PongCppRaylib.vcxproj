@@ -131,6 +131,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="windowsInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="windowsInterface.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

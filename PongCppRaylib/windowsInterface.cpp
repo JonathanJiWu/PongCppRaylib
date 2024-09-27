@@ -5,4 +5,5 @@ void WindowsInterface::SetWindowsInterface()
 {
 	InitWindow(screenWidth, screenHeight, windowsTitle);
 	SetTargetFPS(targetFPS);
+	SetWindowPosition(5, 35);
 }

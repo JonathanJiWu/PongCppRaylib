@@ -13,7 +13,10 @@ class WindowsInterface
 	
 public:
 	void SetWindowsInterface();
+	//int GetScreenWidth() const { return screenWidth; }
 
 
 };
+
+//extern
 

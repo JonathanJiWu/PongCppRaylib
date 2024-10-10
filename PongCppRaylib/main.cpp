@@ -17,7 +17,11 @@ int main()
 
 	
 		ball.UpdateBall();
-		
+		if (static_cast<int>(GetTime())% 5 == 0)
+		{
+			ball.PounceBall();
+		}
+			
 
 
 

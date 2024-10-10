@@ -10,8 +10,10 @@ class Ball
 public:
 
 	void InitBall();
-	void GenerateBall();
+	//void GenerateBall();
 	void UpdateBall();
+	//void PounceBall(double x, double y);//change ball's velocity
+	void PounceBall();//change ball's velocity
 
 
 

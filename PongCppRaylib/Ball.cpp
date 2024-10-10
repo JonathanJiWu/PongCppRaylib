@@ -14,6 +14,17 @@ void Ball::InitBall()
 
 void Ball::UpdateBall()
 {
-	DrawRectangle(initialPosX + velocityX++, initialPosY + velocityY++, 10, 10, WHITE);
+	if (static_cast<int>(GetFrameTime()) % 5 == 0 )
+	{
+		DrawRectangle(initialPosX + velocityX++, initialPosY + velocityY++, 10, 10, WHITE);//this is causing bug; velocity is getting huge
+
+	}
 	ClearBackground(BLACK);
+}
+
+//void Ball::PounceBall(double x, double y)
+void Ball::PounceBall()
+{//what does the new velocity based on? => just reverse both x and y?
+	velocityX = - velocityX;
+	velocityY = - velocityY;
 }
